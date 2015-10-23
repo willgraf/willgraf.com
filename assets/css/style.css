@@ -1,0 +1,368 @@
+/*********************************************************************************/
+/* General																	     */
+/*********************************************************************************/
+
+	html {
+	  position: relative;
+	}
+
+	body {
+	  /* Margin bottom by footer height */
+	  margin-bottom: 4em;
+	}
+
+	.sectionTitle {
+		text-align: center;
+		padding-bottom: 3em;
+		padding-top: 3em;
+	}
+
+	.sectionTitle h1 {
+		font-size: 350%;
+	}
+
+	/*************************		Animations		*************************/
+
+	.fadeIn {
+		-webkit-animation-duration: 1.5s;
+		-moz-animation-duration: 1.5s;
+		-o-animation-duration: 1.5s;
+	}
+
+
+/*********************************************************************************/
+/* Navbar																		 */
+/*********************************************************************************/
+
+	.navbar {
+		border: none;
+		background-color: #2c3e50;
+	}
+	
+	.navbar-inverse .navbar-brand {
+		font-size: 2em;
+		color: #fff;
+	}
+
+
+/*********************************************************************************/
+/* Introduction																	 */
+/*********************************************************************************/
+	
+	.sectionIntro {
+		min-height: 100vh;		
+	}
+
+	.intro {
+		background: url("../img/sky.png") no-repeat center 100% / cover fixed;
+		height: 100vh;
+		border: none;
+		margin: 0;
+		padding-top: 25vh;
+	}
+
+	.intro .jumbotron {
+		text-align: left;
+		background-color: transparent;
+		color: #FFF;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.rw-sentence {
+		margin: 0;
+		text-align: left;
+	}
+
+	.rw-words {
+		display: inline;
+		text-indent: 10px;
+	}
+
+	.rw-words span {
+		position: absolute;
+		opacity: 0;
+		overflow: hidden;
+		color: #3b3a36;
+		color: #FFF;
+	}
+
+	/*************************		Animations		*************************/
+
+	.rw-words-topdown span {
+		animation: rotateWordsFirst 15s linear infinite 0s;
+	}
+
+	.rw-words span:nth-child(1) { 
+		animation-delay: 1s;
+	}
+
+	.rw-words span:nth-child(2) { 
+		animation-delay: 4.3s;
+	}
+
+	.rw-words span:nth-child(3) {
+		animation-delay: 7.6s;
+	}
+
+	.rw-words span:nth-child(4) {
+		animation-delay: 10.9s;
+	}
+
+	.rw-words span:nth-child(5) {
+		animation-delay: 14.2s;
+	}
+
+	.rw-words span:nth-child(6) {
+		animation-delay: 17.5s;
+	}
+
+	@keyframes rotateWordsFirst {
+	    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+	    7% { opacity: 1; height: 60px; }
+	    14% { opacity: 1; height: 60px; }
+		21% { opacity: 0; height: 60px; }
+	    100% { opacity: 0; }
+	}
+
+
+/*********************************************************************************/
+/* About Me																	 	 */
+/*********************************************************************************/
+
+	.sectionAbout {
+		min-height: 100vh;
+		background-color: #1E90FF;
+		padding-bottom: 2.5em;
+	}
+
+	.sectionAbout .sectionTitle {
+		color: #FFF;
+	}
+
+	.textAbout {
+		background-color: transparent;
+		color: #FFF;
+		text-align: center;
+		max-width: 27.5em;
+		padding-bottom: 5em;
+	}
+
+	.avatar {
+		padding-bottom: 3em;
+		padding-top: 1.5em;
+	}
+
+	.avatar img {
+		border: .5em solid #FFF;
+		max-width: 20em;
+	}
+
+	/*************************		Skills		*************************/
+
+	#resumeProficiencies {
+		width: 100%;
+		margin: 20px 0 30px 30px;
+	}
+
+	.skillchart {
+		background-color: transparent;
+		color: #FFF;
+	}
+
+	.skillchart-title {
+		padding-bottom: .5em;
+		text-align: center;
+	}
+
+	#skillName {
+		/*float: center;*/
+		/*clear: right;*/
+		margin: -5px 0 0 0;
+		width: 100%;
+		text-align: left;
+		font-weight: 500;
+	}
+
+	.progress {
+		background: #fff;
+		height: 1.5em;
+	}
+
+	.java, .html, .python, .r, .javascript, .sql {
+		-webkit-transition: width 4.0s ease !important;
+		-moz-transition: width 4.0s ease !important;
+	    -o-transition: width 4.0s ease !important;
+    	transition: width 4.0s ease !important;
+	 }
+
+	/*************************		Animations		*************************/
+
+	#profiletext {
+		-webkit-animation-delay: .75s;
+	    -moz-animation-delay: .75s;
+	    -o-animation-delay: .75s;
+	}
+
+	#skills {
+		-webkit-animation-delay: 1s;
+	    -moz-animation-delay: 1s;
+	    -o-animation-delay: 1s;
+	}
+
+	.avatar .fadeIn {
+		-webkit-animation-delay: .5s;
+	    -moz-animation-delay: .5s;
+	    -o-animation-delay: .5s;
+	}
+
+
+/*********************************************************************************/
+/* Portfolio																	 */
+/*********************************************************************************/
+
+	.sectionPortfolio {
+		min-height: 100vh;
+		background: url("../img/road.png") no-repeat center 100% / cover fixed;
+		padding-bottom: 2.5em;
+	}
+
+	.sectionPortfolio .sectionTitle {
+		color: #FFF;
+	}
+
+	.sectionPortfolio .portfolio-item {
+	    margin: 0 0 1.5em;
+	}
+
+	.sectionPortfolio .portfolio-item .portfolio-link {
+	    display: block;
+	    position: relative;
+	    margin: 0 auto;
+	    max-width: 25em;
+	}
+
+	/*************************		Animations		*************************/
+
+	#portfolio-item-1 a.zoomIn {
+		-webkit-animation-delay: .5s;
+	    -moz-animation-delay: .5s;
+	    -o-animation-delay: .5s;
+	}
+
+	#portfolio-item-2 a.zoomIn {
+		-webkit-animation-delay: .75s;
+	    -moz-animation-delay: .75s;
+	    -o-animation-delay: .75s;
+	}
+
+	#portfolio-item-3 a.zoomIn {
+		-webkit-animation-delay: 1s;
+	    -moz-animation-delay: 1s;
+	    -o-animation-delay: 1s;
+	}
+
+	.sectionPortfolio .portfolio-item .portfolio-link .caption {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0;
+	    background: rgba(255, 141, 30, .85);
+	    -webkit-transition: all ease .5s;
+	    -moz-transition: all ease .5s;
+	    -o-transition: all ease .5s;
+	    transition: all ease .5s;
+	}
+
+	.sectionPortfolio .portfolio-item .portfolio-link .caption:hover {
+	    opacity: 1;
+	}
+
+	.sectionPortfolio .portfolio-item .portfolio-link .caption {
+	    position: absolute;
+	    width: 100%;
+	    text-align: center;
+	    color: #fff;
+	}
+
+	.sectionPortfolio * {
+	    z-index: 2;
+	}
+
+
+/*********************************************************************************/
+/* Contact																	     */
+/*********************************************************************************/
+
+	.sectionContact {
+		min-height: 100vh;
+		background-color: #DCDCDC;
+	}
+
+	.contactform .form-group {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.socialicons {
+		text-align: center;
+		padding-top: 3em;
+	}
+
+	/*************************		Animations		*************************/
+
+	.social:hover {
+		-webkit-transform: scale(1.25);
+		-moz-transform: scale(1.25);
+		-o-transform: scale(1.25);
+	}
+
+	.social {
+		color: #888;
+		margin: .75em 0;
+		-webkit-transition-duration: 0.66s;
+		-moz-transition-duration: 0.66s;
+		-o-transition-duration: 0.66s;
+	}
+
+	/*
+	Multicoloured Hover Variations
+	*/
+
+	.github:hover {
+		color: #6cc644;
+	}
+
+	.linkedin:hover {
+		color: #007bb5;
+	}
+
+	.twitter:hover {
+		color: #4099FF;
+	}
+
+
+/*********************************************************************************/
+/* Footer																	     */
+/*********************************************************************************/
+
+	.footer {
+	  position: absolute;
+	  bottom: 0;
+	  width: 100%;
+	  height: 4em;
+	  background-color: #2c3e50;
+	}
+
+	.container-fluid .text-muted {
+		position: relative;
+		text-align: right;
+		margin-top: 1.414em;
+		padding: 0 5%;
+	}		
+
+	.footer > .container {
+		text-align: right;
+	}
+
+
