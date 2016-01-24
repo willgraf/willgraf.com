@@ -242,6 +242,11 @@
 	    max-width: 25em;
 	}
 
+	.sectionPortfolio img.desaturate { 
+		-webkit-filter: grayscale(25%);
+		filter: grayscale(25%);
+	}
+
 	/*************************		Animations		*************************/
 
 	#portfolio-item-1 a.zoomIn {
