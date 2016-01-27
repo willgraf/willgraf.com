@@ -371,3 +371,26 @@
 	}
 
 
+/*********************************************************************************/
+/* Error																		 */
+/*********************************************************************************/
+
+	.sectionError {
+		min-height: 100vh;		
+	}
+
+	.error {
+		background: url("../img/sky.png") no-repeat center 100% / cover fixed;
+		height: 100vh;
+		border: none;
+		margin: 0;
+		padding-top: 25vh;
+	}
+
+	.error .jumbotron {
+		text-align: left;
+		background-color: transparent;
+		color: #FFF;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
