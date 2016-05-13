@@ -24,6 +24,7 @@
 	/*************************		Animations		*************************/
 
 	.fadeIn {
+		animation-duration: 1.5s;
 		-webkit-animation-duration: 1.5s;
 		-moz-animation-duration: 1.5s;
 		-o-animation-duration: 1.5s;
@@ -69,51 +70,48 @@
 		padding-right: 1em;
 	}
 
-	.rw-sentence {
+	.rotatingSentence {
 		margin: 0;
 		text-align: left;
 	}
 
-	.rw-words {
+	.rotatingWords {
 		display: inline;
 		text-indent: 10px;
 	}
 
-	.rw-words span {
+	.rotatingWords span {
 		position: absolute;
 		opacity: 0;
 		overflow: hidden;
 		color: #3b3a36;
-		color: #FFF;
+		color: #FFFFFF;
+		animation: rotateWordsFirst 15s linear infinite 0s;
 	}
 
 	/*************************		Animations		*************************/
 
-	.rw-words-topdown span {
-		animation: rotateWordsFirst 15s linear infinite 0s;
-	}
-
-	.rw-words span:nth-child(1) { 
+	.rotatingWords span:nth-child(1) { 
 		animation-delay: 1s;
 	}
 
-	.rw-words span:nth-child(2) { 
+	.rotatingWords span:nth-child(2) { 
 		animation-delay: 4.3s;
 	}
 
-	.rw-words span:nth-child(3) {
+	.rotatingWords span:nth-child(3) {
 		animation-delay: 7.6s;
 	}
 
-	.rw-words span:nth-child(4) {
+	.rotatingWords span:nth-child(4) {
 		animation-delay: 10.9s;
 	}
 
-	.rw-words span:nth-child(5) {
+	.rotatingWords span:nth-child(5) {
 		animation-delay: 14.2s;
 	}
 
-	.rw-words span:nth-child(6) {
+	.rotatingWords span:nth-child(6) {
 		animation-delay: 17.5s;
 	}
 
@@ -184,8 +182,8 @@
 		font-weight: 500;
 	}
 
-	.progress {
-		background: #fff;
+	.skillProgress {
+		background: #FFFFFF;
 		height: 1.5em;
 	}
 
@@ -199,18 +197,21 @@
 	/*************************		Animations		*************************/
 
 	#profiletext {
+		animation-delay: .75s;
 		-webkit-animation-delay: .75s;
 	    -moz-animation-delay: .75s;
 	    -o-animation-delay: .75s;
 	}
 
 	#skills {
+		animation-delay: .1s;
 		-webkit-animation-delay: 1s;
 	    -moz-animation-delay: 1s;
 	    -o-animation-delay: 1s;
 	}
 
 	.avatar .fadeIn {
+		animation-delay: .5s;
 		-webkit-animation-delay: .5s;
 	    -moz-animation-delay: .5s;
 	    -o-animation-delay: .5s;
@@ -228,7 +229,7 @@
 	}
 
 	.sectionPortfolio .sectionTitle {
-		color: #FFF;
+		color: #FFFFFF;
 	}
 
 	.sectionPortfolio .portfolio-item {
@@ -250,18 +251,21 @@
 	/*************************		Animations		*************************/
 
 	#portfolio-item-1 a.zoomIn {
+		animation-delay: .5s;
 		-webkit-animation-delay: .5s;
 	    -moz-animation-delay: .5s;
 	    -o-animation-delay: .5s;
 	}
 
 	#portfolio-item-2 a.zoomIn {
+		animation-delay: .75s;
 		-webkit-animation-delay: .75s;
 	    -moz-animation-delay: .75s;
 	    -o-animation-delay: .75s;
 	}
 
 	#portfolio-item-3 a.zoomIn {
+		animation-delay: .1s;
 		-webkit-animation-delay: 1s;
 	    -moz-animation-delay: 1s;
 	    -o-animation-delay: 1s;
@@ -317,6 +321,7 @@
 	/*************************		Animations		*************************/
 
 	.social:hover {
+		transform: scale(1.25);
 		-webkit-transform: scale(1.25);
 		-moz-transform: scale(1.25);
 		-o-transform: scale(1.25);
@@ -325,6 +330,7 @@
 	.social {
 		color: #888;
 		margin: .75em 0;
+		transition-duration: 0.66s;
 		-webkit-transition-duration: 0.66s;
 		-moz-transition-duration: 0.66s;
 		-o-transition-duration: 0.66s;
