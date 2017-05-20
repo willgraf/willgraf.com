@@ -48,7 +48,6 @@ if (typeof console === "undefined") {
     };
 }
 
-
 // skills chart
 $(document).ready(function() {
   $('.java').css('width', '90%');
