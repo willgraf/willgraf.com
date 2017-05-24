@@ -1,4 +1,9 @@
 # --------------------
+# Old Dev Files
+# --------------------
+*.old
+
+# --------------------
 # OSX Files
 # --------------------
 .DS_Store
@@ -17,7 +22,6 @@ Icon
 .project
 .settings/
 .*.md.html
-
 
 # --------------------
 # IntelliJ Files
