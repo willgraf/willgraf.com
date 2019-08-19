@@ -6,9 +6,18 @@
     position: relative;
   }
 
-  body {
-    background: url("../img/marble.jpg") no-repeat center 100% / cover fixed;
+  .webp body {
+    background: url("../img/marble.webp") no-repeat center 100% / cover fixed;
     height: 100vh;
+  }
+
+  .no-webp body {
+    background: url("../img/marble.png") no-repeat center 100% / cover fixed;
+    height: 100vh;
+  }
+
+  .no-js body {
+    background: url("../img/marble.webp") no-repeat center 100% / cover fixed;
   }
 
   #main {
