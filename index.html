@@ -54,7 +54,11 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 avatar fadeIn">
-            <img class="img-circle img-responsive center-block wow animated" src="assets/img/me.png" alt="profile picture">
+            <picture>
+              <source type="image/webp" srcset="assets/img/me.webp">
+              <source type="image/jpeg" srcset="assets/img/me.png">
+              <img loading="lazy" class="img-circle img-responsive center-block wow animated" src="assets/img/me.png" alt="profile picture">
+            </picture>
             <div class="socialicons">
               <div class="row-fluid">
                 <div class="col-xs-4 text-right">
