@@ -16,6 +16,10 @@
     height: 100vh;
   }
 
+  .no-js body {
+    background: url("../img/marble.webp") no-repeat center 100% / cover fixed;
+  }
+
   #main {
     padding-top: 5%;
   }
